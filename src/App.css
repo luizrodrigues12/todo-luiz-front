@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+
+  background-color: rgb(65, 64, 64);
+}
+
+.form-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.form-container input {
+  font-size: 1em;
+  width: 220px;
+  height: 25px;
+
+  padding: 5px;
+  outline: none;
+  border: none;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.error-paragraph {
+  text-align: center;
+}
+
+.form-container button {
+  width: 70px;
+  height: 35.5px;
+
+  background-color: rgb(0, 0, 0);
+  color: white;
+
+  border: none;
+  border-radius: 0px 10px 10px 0px;
+
+  font-size: 0.9em;
+
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  border: 1px solid rgba(255, 255, 255, 0.26);
+}
+
+.container-todo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-radius: 30px;
+
+  margin: 50px 0px;
+  padding: 20px;
+  min-width: 300px;
+  min-height: 600px;
+
+  background-color: rgb(26, 26, 26);
+
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.226);
+}
+
+.container-todo h1 {
+  padding-bottom: 30px;
+  padding-top: 10px;
+  color: white;
+}
+
+.show {
+  padding-top: 10px;
+  align-self: flex-start;
+  color: white;
+  display: block;
+}
+
+.task-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 1.2rem;
+  color: white;
+
+  width: 300px;
+  height: 50px;
+  margin: 10px 0px;
+
+  background-color: black;
+  border-radius: 10px;
+}
+
+.task-title p {
+  padding: 10px;
+}
+
+.icon-check {
+  padding: 10px 0px;
+  cursor: pointer;
+}
+
+.icon-trash {
+  padding: 10px 10px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.icon-pencil {
+  padding: 10px 0px 10px 10px;
+  cursor: pointer;
+}
+
+.task-done {
+  text-decoration: line-through;
+  color: rgb(122, 122, 122);
+}
+
+.pendent-task {
+  color: white;
+  text-decoration: none;
+}
+
+.edit-form {
+  border-radius: 25px;
+  background-color: rgb(26, 26, 26);
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -90%);
+
+  margin: 50px 0px;
+  padding: 20px;
+  min-width: 400px;
+  min-height: 200px;
+
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.226);
+
+  font-size: 1.2em;
+  z-index: 999;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-form h2 {
+  padding-top: 10px;
+  color: white;
+  text-align: center;
+}
+
+.edit-button {
+  width: 80px;
+  height: 35px;
+
+  background-color: black;
+  color: white;
+
+  border-radius: 15px;
+  border: none;
+  font-size: 0.9em;
+
+  cursor: pointer;
+}
+
+.edit-button:hover {
+  color: rgba(255, 255, 255, 0.808);
+  border: 1px solid rgba(255, 255, 255, 0.26);
+}
+
+.cancel-button {
+  width: 80px;
+  height: 35px;
+
+  margin-left: 10px;
+
+  background-color: black;
+  color: white;
+
+  border-radius: 15px;
+  border: none;
+  font-size: 0.9em;
+
+  cursor: pointer;
+}
+
+.edit-input {
+  margin: 30px 0px;
+  font-size: 1.2em;
+}
+
+.no-show {
+  display: none;
+}

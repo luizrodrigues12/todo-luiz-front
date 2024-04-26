@@ -5,7 +5,13 @@ const EditForm = ({ taskId }: { taskId: string }) => {
   const [newTitle, setNewTitle] = useState("");
 
   return (
-    <div>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+      }}
+    >
       <div className="edit-form">
         <h2>Edit Task</h2>
         <input

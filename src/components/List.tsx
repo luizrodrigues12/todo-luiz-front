@@ -18,15 +18,15 @@ const List = () => {
   const [showEditForm, setShowEditForm] = useState(false);
 
   useEffect(() => {
+    axios
+      .get("https://todo-luiz-back.onrender.com/get")
+      .then((result) => setListTodo(result.data))
+      .catch((err) => console.log(err));
+
     // eslint-disable-next-line no-constant-condition
-    while (10 > 2) {
-      setTimeout(() => {
-        axios
-          .get("https://todo-luiz-back.onrender.com/get")
-          .then((result) => setListTodo(result.data))
-          .catch((err) => console.log(err));
-      }, 60000 * 3);
-    }
+    setInterval(() => {
+      location.reload();
+    }, 60000 * 3);
   }, []);
 
   return (
